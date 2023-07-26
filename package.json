@@ -1,0 +1,20 @@
+{
+  "name": "lexical-analyser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon index.js"
+  },
+  "author": "Marco Rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "semistandard": "^16.0.1"
+  },
+  "dependencies": {
+    "ohm-js": "^17.1.0"
+  }
+}
