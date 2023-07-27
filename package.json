@@ -1,5 +1,5 @@
 {
-  "name": "syntax-lexical-semantic-compiler",
+  "name": "semantic-syntax-lexical-compiler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
