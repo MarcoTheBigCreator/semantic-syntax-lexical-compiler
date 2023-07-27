@@ -1,5 +1,5 @@
-{"type":"RESERVED","value":"program.init;"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -13,22 +13,7 @@
 {"type":"COLON","value":":"}
 {"type":"RESERVED","value":"boolean"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
-{"type":"RESERVED","value":"var"}
-{"type":"IDENTIFIER","value":"$id2"}
-{"type":"COMMA","value":","}
-{"type":"IDENTIFIER","value":"$id3"}
-{"type":"COMMA","value":","}
-{"type":"IDENTIFIER","value":"$id4"}
-{"type":"COLON","value":":"}
-{"type":"RESERVED","value":"int"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"IDENTIFIER","value":"$id"}
-{"type":"COLON","value":":"}
-{"type":"RESERVED","value":"boolean"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"OPEN BRACKETS","value":"{"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -43,11 +28,7 @@
 {"type":"RESERVED","value":"boolean"}
 {"type":"SEMI-COLON","value":";"}
 {"type":"OPEN BRACKETS","value":"{"}
-{"type":"IDENTIFIER","value":"$id4"}
-{"type":"EQUAL","value":"="}
-{"type":"INT","value":"30"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -66,13 +47,7 @@
 {"type":"EQUAL","value":"="}
 {"type":"INT","value":"30"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"IDENTIFIER","value":"$id2"}
-{"type":"EQUAL","value":"="}
-{"type":"INT","value":"2"}
-{"type":"PLUS","value":"+"}
-{"type":"INT","value":"9"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -97,15 +72,7 @@
 {"type":"PLUS","value":"+"}
 {"type":"INT","value":"9"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"IDENTIFIER","value":"$id3"}
-{"type":"EQUAL","value":"="}
-{"type":"INT","value":"4"}
-{"type":"PLUS","value":"+"}
-{"type":"IDENTIFIER","value":"$id2"}
-{"type":"PLUS","value":"+"}
-{"type":"IDENTIFIER","value":"$id4"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -138,13 +105,7 @@
 {"type":"PLUS","value":"+"}
 {"type":"IDENTIFIER","value":"$id4"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"if"}
-{"type":"OPEN PARENTESIS","value":"("}
-{"type":"IDENTIFIER","value":"$id"}
-{"type":"CLOSE PARENTESIS","value":")"}
-{"type":"RESERVED","value":"then"}
-{"type":"OPEN BRACKETS","value":"{"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -183,11 +144,7 @@
 {"type":"CLOSE PARENTESIS","value":")"}
 {"type":"RESERVED","value":"then"}
 {"type":"OPEN BRACKETS","value":"{"}
-{"type":"IDENTIFIER","value":"$id"}
-{"type":"EQUAL","value":"="}
-{"type":"RESERVED","value":"false"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -230,10 +187,7 @@
 {"type":"EQUAL","value":"="}
 {"type":"RESERVED","value":"false"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"CLOSE BRACKETS","value":"}"}
-{"type":"RESERVED","value":"else"}
-{"type":"OPEN BRACKETS","value":"{"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -279,11 +233,7 @@
 {"type":"CLOSE BRACKETS","value":"}"}
 {"type":"RESERVED","value":"else"}
 {"type":"OPEN BRACKETS","value":"{"}
-{"type":"IDENTIFIER","value":"$id"}
-{"type":"EQUAL","value":"="}
-{"type":"RESERVED","value":"true"}
-{"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -333,9 +283,59 @@
 {"type":"EQUAL","value":"="}
 {"type":"RESERVED","value":"true"}
 {"type":"SEMI-COLON","value":";"}
+{"type":"RESERVED","value":"programa id;"}
+{"type":"RESERVED","value":"var"}
+{"type":"IDENTIFIER","value":"$id2"}
+{"type":"COMMA","value":","}
+{"type":"IDENTIFIER","value":"$id3"}
+{"type":"COMMA","value":","}
+{"type":"IDENTIFIER","value":"$id4"}
+{"type":"COLON","value":":"}
+{"type":"RESERVED","value":"int"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"IDENTIFIER","value":"$id"}
+{"type":"COLON","value":":"}
+{"type":"RESERVED","value":"boolean"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"OPEN BRACKETS","value":"{"}
+{"type":"IDENTIFIER","value":"$id4"}
+{"type":"EQUAL","value":"="}
+{"type":"INT","value":"30"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"IDENTIFIER","value":"$id2"}
+{"type":"EQUAL","value":"="}
+{"type":"INT","value":"2"}
+{"type":"PLUS","value":"+"}
+{"type":"INT","value":"9"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"IDENTIFIER","value":"$id3"}
+{"type":"EQUAL","value":"="}
+{"type":"INT","value":"4"}
+{"type":"PLUS","value":"+"}
+{"type":"IDENTIFIER","value":"$id2"}
+{"type":"PLUS","value":"+"}
+{"type":"IDENTIFIER","value":"$id4"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"RESERVED","value":"if"}
+{"type":"OPEN PARENTESIS","value":"("}
+{"type":"IDENTIFIER","value":"$id"}
+{"type":"CLOSE PARENTESIS","value":")"}
+{"type":"RESERVED","value":"then"}
+{"type":"OPEN BRACKETS","value":"{"}
+{"type":"IDENTIFIER","value":"$id"}
+{"type":"EQUAL","value":"="}
+{"type":"RESERVED","value":"false"}
+{"type":"SEMI-COLON","value":";"}
+{"type":"CLOSE BRACKETS","value":"}"}
+{"type":"RESERVED","value":"else"}
+{"type":"OPEN BRACKETS","value":"{"}
+{"type":"IDENTIFIER","value":"$id"}
+{"type":"EQUAL","value":"="}
+{"type":"RESERVED","value":"true"}
+{"type":"SEMI-COLON","value":";"}
 {"type":"CLOSE BRACKETS","value":"}"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}
@@ -391,7 +391,7 @@
 {"type":"EQUAL","value":"="}
 {"type":"INT","value":"12"}
 {"type":"SEMI-COLON","value":";"}
-{"type":"RESERVED","value":"program.init;"}
+{"type":"RESERVED","value":"programa id;"}
 {"type":"RESERVED","value":"var"}
 {"type":"IDENTIFIER","value":"$id2"}
 {"type":"COMMA","value":","}

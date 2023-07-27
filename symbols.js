@@ -1,3 +1,4 @@
+// Description: This file contains the symbols table and the functions to handle it.
 const SymbolsTable = {
   symbols: {
     principal: {
@@ -49,8 +50,9 @@ const SymbolsTable = {
     }
   },
 };
-export default SymbolsTable;
 
+// here we export the symbols table
+export default SymbolsTable;
 export const SymbolsTableGlobal = {
   symbols: {},
   get: function (name) {
@@ -72,7 +74,6 @@ export const SymbolsTableGlobal = {
     }
   },
   update: function (name, newValue, valueType) {
-    // console.log('--> updating: ', name, newValue, valueType);
     const prev = this.get(name);
     if (prev) {
       if (prev.type === valueType) {
@@ -132,7 +133,6 @@ export function optimize(params, idToAssign) {
       }
 
       oper = oper.concat(newVal);
-      // console.log('->',oper);
     }
     try {
       const result = eval(oper);

@@ -1,4 +1,4 @@
-program.init;
+programa id;
 var $id2, $id3, $id4:int; $id:boolean; 
 {   
     $id4 = 30;

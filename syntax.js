@@ -1,8 +1,9 @@
+// Code for the syntactic analizer
 import * as ohm from "ohm-js";
 import { SymbolsTableGlobal, optimize } from "./symbols.js";
 const prog = ohm.grammar(String.raw`
 Lang {
-  program = "program.init;" body
+  program = "programa id;" body
   body = declaration principal --decrbody
     | principal
   declaration = "var" list_id ":" types ";" aux1 ?
@@ -56,11 +57,11 @@ Lang {
       | "!" expresion --neg
 }
 `);
-
+// here we export the syntacticAnalizer function
 export const syntacticAnalizer = (tokens, rsl) => {
   const matchResult = prog.match(tokens);
   if (!matchResult.failed()) {
-    console.log("---> Correct Syntax");
+    console.log("\n===> 🔥🔥 Correct Syntax 🔥🔥 <===\n")
     const toksArr = rsl;
     let declaring = false;
     let currType = "";
@@ -100,7 +101,6 @@ export const syntacticAnalizer = (tokens, rsl) => {
         }
       }
     }
-    console.log("---> Finished successfully");
     return SymbolsTableGlobal.symbols;
   } else {
     throw new Error(`Syntax Error: ${matchResult.message}`);

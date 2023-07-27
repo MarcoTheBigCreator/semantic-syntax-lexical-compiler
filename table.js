@@ -1,3 +1,4 @@
+// Description: This file contains the table of the automata
 export const States = {
   0: {
     moves: {
@@ -170,7 +171,6 @@ export const States = {
   },
   42: {
     will: 'reserved'
-    //  moves: { "[a-z]": 42 },
   },
   43: {
     moves: { '.': 44 },
@@ -217,7 +217,7 @@ export const Finals = {
 };
 
 export const Reserved = {
-  p: ['program.init;'],
+  p: ['programa id;'],
   v: ['var'],
   i: ['int', 'if'],
   f: ['false', 'float', 'for'],

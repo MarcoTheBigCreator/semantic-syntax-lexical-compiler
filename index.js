@@ -1,32 +1,39 @@
+// import the following modules
 import fs from "fs";
 import readline from "readline";
 import { States, Finals, Reserved } from "./table.js";
 import { syntacticAnalizer } from "./syntax.js";
 
+// define the input and output files
 const inputFile = "file2.txt";
 const outputFile = "output.txt";
 const symFile = "symtable.txt";
 const errorFile = "error.txt";
 
+// create the read and write streams
 const readStream = fs.createReadStream(inputFile, "utf8");
 
 const writeStream = fs.createWriteStream(outputFile, "utf8");
 
+// create the error stream
 const errorStream = fs.createWriteStream(errorFile, "utf8");
 
 const symStream = fs.createWriteStream(symFile, "utf8");
 
+// create the readline interface
 const readLine = readline.createInterface({
   input: readStream,
   crlfDelay: Infinity,
 });
 
+// define the variables
 let lineCount = 0;
 let current = "";
 let state = 0;
 let carry = false;
 const result = [];
 
+// define the analyzeChar function
 const analyzeChar = (char, position) => {
   const currState = States[state];
   let matched = false;
@@ -96,6 +103,7 @@ const analyzeChar = (char, position) => {
   }
 };
 
+// define the readLine events
 readLine.on("line", (line) => {
   try {
     const chars = line.split("");
@@ -128,6 +136,7 @@ readLine.on("line", (line) => {
   }
 });
 
+// define the readLine close event
 readLine.on("close", () => {
   if (carry) {
     console.error(
@@ -138,6 +147,7 @@ readLine.on("close", () => {
     );
   }
   let res = "";
+  let tokensCon = "";
   for (let index = 0; index < result.length; index++) {
     const token = result[index];
     if (
@@ -150,25 +160,52 @@ readLine.on("close", () => {
     } else if (token.type !== "COMMENT") {
       res = res.concat(`${token.value}`);
     }
+    if (
+      token.type === "INT" ||
+      token.type === "FLOAT" ||
+      token.type === "IDENTIFIER" ||
+      token.type === "STRING" ||
+      token.type === "COMMENT" ||
+      token.type === "RESERVED"
+    ) {
+      tokensCon = tokensCon.concat(`${token.type} ,`);
+    }
   }
-  console.log("---> Correct Lexical");
+  if (tokensCon.endsWith(",")) {
+    tokensCon = tokensCon.slice(0, -1);
+  }
   try {
-    console.log("--TOKENS-- \n tokens->", res);
+    console.log(`
+╔════════════════════════╗
+  🌟🌟🌟  TOKENS  🌟🌟🌟
+`);
+    console.log(`( ${tokensCon})\n`);
+
+    console.log("===> 🚀🚀 Correct Lexical 🚀🚀 <===");
     const r = syntacticAnalizer(res, result);
-    console.log("Symbols->", r);
-    symStream.write(
-      Object.keys(r)
-        .map((id) =>
-          JSON.stringify({
-            [id]: { type: `${r[id].type}`, value: `${r[id].value}` },
-          })
-        )
-        .join("\n") + "\n"
-    );
+    console.log(`\n🔷🔷🔷  SYMBOLS 🔷🔷🔷`);
+// console.log(r);
+//     symStream.write(
+//       Object.keys(r)
+//         .map((id) =>
+//           JSON.stringify({
+//             [id]: { type: `${r[id].type}`, value: `${r[id].value}` },
+//           })
+//         )
+//         .join("\n") + "\n"
+//     );
+const data = Object.keys(r).map((id) => ({
+  ID: id,
+  Type: r[id].type,
+  Value: r[id].value,
+}));
+console.table(data);
+    console.log("\n===> ✅✅ FINISHED SUCCESSFULLY ✅✅ <===");
   } catch (error) {
     console.log(error);
     errorStream.write(`${error}`);
   }
+  // close the streams
   writeStream.end();
   symStream.end();
   errorStream.end();
