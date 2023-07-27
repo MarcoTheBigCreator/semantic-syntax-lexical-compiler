@@ -22,6 +22,8 @@ During the quarter, this compiler was built part by part based on a particular l
 ### Step 1: Install Node.js
 https://nodejs.org/en
 
+##  On console
+
 ### Step 2: Clone the repository:
 <pre><code>git clone https://github.com/MarcoTheBigCreator/semantic-syntax-lexical-compiler.git</code></pre>
 
