@@ -7,7 +7,7 @@ import { syntacticAnalizer } from "./syntaxAnalyzer.js";
 // define the input and output files
 const inputFile = "example.txt";
 const outputFile = "output.txt";
-const symFile = "symtable.txt";
+const symFile = "systemTable.txt";
 const errorFile = "error.txt";
 
 // create the read and write streams
