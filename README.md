@@ -20,7 +20,7 @@ During the quarter, this compiler was built part by part based on a particular l
 # How to use it?
 
 ### Step 1: Install Node.js
-<pre><code>https://nodejs.org/en</code><pre>
+https://nodejs.org/en
 
 ### Step 2: Clone the repository:
 <pre><code>git clone https://github.com/MarcoTheBigCreator/semantic-syntax-lexical-compiler.git</code></pre>
