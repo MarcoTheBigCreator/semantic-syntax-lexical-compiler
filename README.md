@@ -30,3 +30,5 @@ During the quarter, this compiler was built part by part based on a particular l
 
 ### Step 4: Experiment on your own:
 You can take a look at the example of the grammar, modify the lanaguage and its rules, and adapt it to your needs or ideas.
+
+# Thanks for watching! 😏
