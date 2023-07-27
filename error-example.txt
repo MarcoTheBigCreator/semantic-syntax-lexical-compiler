@@ -1,7 +1,0 @@
-program.init;
-var $sdsd, $sd, $gth :string;
-{
-    $sdsd = 'sfrgereg';
-    $id = false ;
-    $id = true;
-}.
