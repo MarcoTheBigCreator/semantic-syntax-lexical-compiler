@@ -1,6 +1,6 @@
 // Code for the syntactic analizer
 import * as ohm from "ohm-js";
-import { SymbolsTableGlobal, optimize } from "./symbols.js";
+import { SymbolsTableGlobal, optimize } from "./semanticTable.js";
 const prog = ohm.grammar(String.raw`
 Lang {
   program = "programa id;" body

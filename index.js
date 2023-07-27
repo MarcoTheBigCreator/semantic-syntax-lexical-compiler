@@ -1,11 +1,11 @@
 // import the following modules
 import fs from "fs";
 import readline from "readline";
-import { States, Finals, Reserved } from "./table.js";
-import { syntacticAnalizer } from "./syntax.js";
+import { States, Finals, Reserved } from "./transitionTable.js";
+import { syntacticAnalizer } from "./syntaxAnalyzer.js";
 
 // define the input and output files
-const inputFile = "file2.txt";
+const inputFile = "example.txt";
 const outputFile = "output.txt";
 const symFile = "symtable.txt";
 const errorFile = "error.txt";
@@ -183,23 +183,13 @@ readLine.on("close", () => {
 
     console.log("===> 🚀🚀 Correct Lexical 🚀🚀 <===");
     const r = syntacticAnalizer(res, result);
-    console.log(`\n🔷🔷🔷  SYMBOLS 🔷🔷🔷`);
-// console.log(r);
-//     symStream.write(
-//       Object.keys(r)
-//         .map((id) =>
-//           JSON.stringify({
-//             [id]: { type: `${r[id].type}`, value: `${r[id].value}` },
-//           })
-//         )
-//         .join("\n") + "\n"
-//     );
-const data = Object.keys(r).map((id) => ({
-  ID: id,
-  Type: r[id].type,
-  Value: r[id].value,
-}));
-console.table(data);
+    console.log(`\n🔷🔷🔷  SEMANTIC TABLE 🔷🔷🔷`);
+    const data = Object.keys(r).map((id) => ({
+      ID: id,
+      Type: r[id].type,
+      Value: r[id].value,
+    }));
+    console.table(data);
     console.log("\n===> ✅✅ FINISHED SUCCESSFULLY ✅✅ <===");
   } catch (error) {
     console.log(error);
