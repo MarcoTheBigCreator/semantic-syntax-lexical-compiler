@@ -19,16 +19,21 @@ During the quarter, this compiler was built part by part based on a particular l
 
 # How to use it?
 
-### Step 1: Clone the repository:
+### Step 1: Install Node.js
+https://nodejs.org/en
+
+##  On console
+
+### Step 2: Clone the repository:
 <pre><code>git clone https://github.com/MarcoTheBigCreator/semantic-syntax-lexical-compiler.git</code></pre>
 
-### Step 2: Install the node modules:
+### Step 3: Install the node modules:
 <pre><code>npm i</code></pre>
 
-### Step 3: Run the development script:
+### Step 4: Run the development script:
 <pre><code>npm run dev</code></pre>
 
-### Step 4: Experiment on your own:
+### Step 5: Experiment on your own:
 You can take a look at the example of the grammar, modify the lanaguage and its rules, and adapt it to your needs or ideas.
 
 # Thanks for watching! 😏
