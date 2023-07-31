@@ -1,13 +1,13 @@
 programa id;
-var $a, $b, $c:int; $question:boolean; 
+var $a, $b, $c:int; $switch:boolean; 
 {   
-    $a = 30;
-    $b = 2 + 9;
-    $c = 4 + $a + $b;
-    if ( $question ) then {
-        $question = false;
+    $a = 50;
+    $b = 4 + 9;
+    $c = 69 + $a + $b;
+    if ( $switch ) then {
+        $switch = false;
     } else {
-        $question = true;
+        $switch = true;
     };
-    $a = 12;
+    $a = 15;
 }.
