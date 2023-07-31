@@ -9,5 +9,5 @@ var $a, $b, $c:int; $switch:boolean;
     } else {
         $switch = true;
     };
-    $a = 15;
+    /*$a = 15;*/
 }.

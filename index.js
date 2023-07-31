@@ -5,7 +5,7 @@ import { States, Finals, Reserved } from "./transitionTable.js";
 import { syntacticAnalizer } from "./syntaxAnalyzer.js";
 
 // define the input and output files
-const inputFile = "example.txt";
+const inputFile = "code.txt";
 const outputFile = "output.txt";
 const symFile = "systemTable.txt";
 const errorFile = "error.txt";
